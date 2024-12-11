@@ -1,11 +1,11 @@
 for (let i = 1; i<= 100; i++){
-    let x = (i % 3)
-    let y = (i % 5)
-    if(!x && !y){
+    let mod3 = (i % 3)
+    let mod5 = (i % 5)
+    if(!mod3 && !mod5){
         console.log(`FizzBuzz`)
-    }else if(!x){
+    }else if(!mod3){
         console.log(`Fiz`)
-    }else if (!y){
+    }else if (!mod5){
         console.log(`Buzz`)
     }else{
         console.log(i)
@@ -17,15 +17,17 @@ for (let i = 1; i<= 100; i++){
 
 
 for (let i = 1; i<= 100; i++){
-    let x = (i % 3)=== 0
-    let y = (i % 5)=== 0
-    if(x && y){
+    let mod3 = (i % 3) === 0
+    let mod5 = (i % 5) === 0
+    if(mod3 && mod5){
         console.log(`FizzBuzz`)
-    }else if(x){
+    }else if(mod3){
         console.log(`Fiz`)
-    }else if (y){
+    }else if (mod5){
         console.log(`Buzz`)
     }else{
         console.log(i)
     }
-}*/
+}
+    
+*/
